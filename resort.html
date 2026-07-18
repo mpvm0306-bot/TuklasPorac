@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resort | TUKLAS PORAC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="external.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">
+      <img src="logoporac.png" alt="Tuklas Porac logo" class="logo-img">
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="searchBar" placeholder="Search destinations...">
+      <button type="button" id="searchBtn" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+      </button>
+      <ul id="suggestions" class="suggestions hidden"></ul>
+    </div>
+
+    <nav class="nav-links">
+      <a href="index.html#home">Home</a>
+      <a href="index.html#destinations">Destination</a>
+      <a href="index.html#about">Description</a>
+      <a href="index.html#why-visit">About</a>
+    </nav>
+  </header>
+
+  <section class="category-hero" style="--category-img:url('poracaybg.jpg');">
+    <h1>Resort Category</h1>
+  </section>
+
+  <section class="category-page-section">
+    <div class="card-grid">
+      <article class="dest-card" data-name="Hacienda Antonio of Señura">
+        <div class="dest-img">
+          <img src="haciendabg.jpg" alt="Hacienda Antonio of Señura">
+        </div>
+        <div class="dest-body">
+          <h3>Hacienda Antonio of Señura</h3>
+          <p>A natural and relaxing escape featuring spacious lodges, refreshing pools, and open gazebos perfect for recreation.</p>
+          <a href="hacienda.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Moontura Heights Resort">
+        <div class="dest-img">
+          <img src="moonturabg.jpg" alt="Moontura Heights Resort">
+        </div>
+        <div class="dest-body">
+          <h3>Moontura Heights Resort</h3>
+          <p>A rising private villa destination in Porac featuring scenic views, relaxing pool amenities, and lush landscapes perfect for family outings.</p>
+          <a href="moontura.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Poracay Resort">
+        <div class="dest-img">
+          <img src="poracaybg.jpg" alt="Poracay Resort">
+        </div>
+        <div class="dest-body">
+          <h3>Poracay Resort</h3>
+          <p>A vibrant vacationer's haven offering multi-sized swimming pools, native nipa huts, and an active outdoor playground perfect for big group outings and family gatherings.</p>
+          <a href="poracay.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Poracay Resort">
+        <div class="dest-img">
+          <img src="bluehotelbg.jpg" alt="Poracay Resort">
+        </div>
+        <div class="dest-body">
+          <h3>Blue Hotel & Resort</h3>
+          <p>A refreshing oasis in Pulung Maba offering extensive outdoor pools, cozy lounge areas, and hotel rooms tailored for premium family staycations.</p>
+          <a href="bluehotel.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Poracay Resort">
+        <div class="dest-img">
+          <img src="rlresortbg.png" alt="Poracay Resort">
+        </div>
+        <div class="dest-body">
+          <h3>RL Resort & Leisure Park</h3>
+          <p>A vibrant family playground in Porac offering multi-featured swimming pools, a poolside bar, lively karaoke setup, and outdoor sports.</p>
+          <a href="rlresort.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Poracay Resort">
+        <div class="dest-img">
+          <img src="cjresortbg.jpg" alt="Poracay Resort">
+        </div>
+        <div class="dest-body">
+          <h3>CJ Resort</h3>
+          <p>A refreshing oasis in Pulung Maba offering extensive outdoor pools, cozy lounge areas, and hotel rooms tailored for premium family staycations.</p>
+          <a href="cjresort.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Poracay Resort">
+        <div class="dest-img">
+          <img src="gander.jpg" alt="Poracay Resort">
+        </div>
+        <div class="dest-body">
+          <h3>Puning Hot Spring Station 3</h3>
+          <p>An extraordinary wellness escape featuring eleven geothermal pools, therapeutic volcanic mud packs, and stunning lahar canyon landscapes perfect for adventure seekers.</p>
+          <a href="puning-hot-spring.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+
+    </div>
+  </section>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="logoporacnobgfooter.png" alt="Tuklas Porac logo" class="logo-img footer-logo-img">
+      </div>
+      <p>Your gateway to the natural wonders, culture, and adventure of Porac, Pampanga.</p>
+    </div>
+
+    <div class="footer-links-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#destinations">Destination</a></li>
+        <li><a href="index.html#about">Description</a></li>
+        <li><a href="index.html#why-visit">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-disclaimer-col">
+      <h4>Disclaimer</h4>
+      <p class="disclaimer">
+        Trails, hot springs, and outdoor activities featured on this site carry inherent risks. All information provided is for educational and informational purposes only. Visit at your own risk and discretion. Tuklas Porac and its administrators are not liable for any injury, loss, or damage incurred during your visit. Please follow local guides, safety signage, and barangay/tourism office advisories at all times.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-acknowledgment">
+    <p>The TUKLAS PORAC team would like to express its sincere gratitude to the Porac Tourism Office for granting permission to use photographs and tourism-related information featured on this website. Their cooperation and support made the development of this project possible. We also extend our appreciation to everyone who provided guidance, encouragement, and support throughout the development of this website.</p>
+    <p>All photographs, information, and other materials are used with permission and are intended solely to promote tourism, increase awareness, and provide helpful information to visitors exploring the Municipality of Porac.</p>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2026 Tuklas Porac. All Rights Reserved.
+  </div>
+</footer>
+
+  <script src="searchlist.js"></script>
+</body>
+</html>

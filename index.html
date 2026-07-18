@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TUKLAS PORAC | Discover Porac, Pampanga</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="external.css">
+</head>
+<body>
+
+  <!-- ============================= -->
+  <!-- NAVBAR                        -->
+  <!-- ============================= -->
+  <header class="navbar">
+    <div class="logo">
+      <div class="logo">
+  <img src="logoporac.png" alt="Tuklas Porac logo" class="logo-img">
+</div>
+    </div>
+
+  <div class="search-bar">
+  <input type="text" id="searchBar" placeholder="Search destinations...">
+  <button type="button" id="searchBtn" aria-label="Search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="11" cy="11" r="7"></circle>
+      <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+    </svg>
+  </button>
+  <ul id="suggestions" class="suggestions hidden"></ul>
+</div>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#destinations">Destination</a>
+      <a href="#about">Description</a>
+      <a href="#why-visit">About</a>
+    </nav>
+  </header>
+
+  <!-- ============================= -->
+  <!-- HERO                          -->
+  <!-- ============================= -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-location">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2C7.86 2 4.5 5.36 4.5 9.5C4.5 15.13 12 22 12 22C12 22 19.5 15.13 19.5 9.5C19.5 5.36 16.14 2 12 2ZM12 12.25C10.48 12.25 9.25 11.02 9.25 9.5C9.25 7.98 10.48 6.75 12 6.75C13.52 6.75 14.75 7.98 14.75 9.5C14.75 11.02 13.52 12.25 12 12.25Z"/>
+        </svg>
+        <span>Pampanga, Philippines</span>
+      </div>
+      <h2>Welcome to<br>Porac Pampanga</h2>
+      <div class="hero-buttons">
+        <a href="#destinations" class="btn-primary">Explore</a>
+        <button type="button" class="btn-circle" aria-label="Bookmark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- FEATURED DESTINATIONS         -->
+  <!-- ============================= -->
+<section class="destinations" id="destinations">
+  <div class="section-head-row">
+    <div>
+      <span class="eyebrow">Featured Destinations</span>
+      <h2 class="section-heading">Places You Shouldn't Miss</h2>
+      <p class="section-sub">From volcanic craters to hidden hot springs, Porac's landscape offers an adventure for every kind of traveler.</p>
+    </div>
+  </div>
+
+  <!-- Category buttons -->
+ <div class="category-nav">
+  <a href="falls.html" class="category-btn">Falls</a>
+  <a href="park.html" class="category-btn">Park</a>
+  <a href="resort.html" class="category-btn">Resort</a>
+  <a href="church.html" class="category-btn">Church</a>
+</div>
+
+  <!-- FALLS category -->
+  <div id="falls" class="category-section">
+    <h3 class="category-heading">Falls</h3>
+    <div class="card-grid">
+      <article class="dest-card" data-name="Miyamit Falls">
+        <div class="dest-img">
+          <img src="miyamitbg.jpg" alt="Mount Pinatubo crater trek">
+        </div>
+        <div class="dest-body">
+          <h3>Miyamit Falls</h3>
+          <p>Trek across lahar-carved trails to the world-famous crater lake, cradled by emerald cliffs.</p>
+          <a href="miyamit-falls.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Dara Falls">
+        <div class="dest-img">
+          <img src="narafallsbg.jpg" alt="Dara Falls">
+        </div>
+        <div class="dest-body">
+          <h3>Dara Falls</h3>
+          <p>A scenic hidden gem that serves as a popular refreshing escape during the summer months.</p>
+          <a href="darafalls.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Tutulari Falls">
+        <div class="dest-img">
+          <img src="tutularifallsbg.jpg" alt="Tutulari Falls">
+        </div>
+        <div class="dest-body">
+          <h3>Tutulari Falls</h3>
+          <p>A scenic hidden gem that serves as a popular refreshing escape during the summer months.</p>
+          <a href="tutularifalls.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- PARK category -->
+  <div id="park" class="category-section">
+    <h3 class="category-heading">Park</h3>
+    <div class="card-grid">
+      <article class="dest-card" data-name="Bayung Porac Mini Park">
+        <div class="dest-img">
+          <img src="bayungporacbg.jpg" alt="Bayung Porac Mini Park">
+        </div>
+        <div class="dest-body">
+          <h3>Bayung Porac Mini Park</h3>
+          <p>A newly renovated, vibrant recreational park featuring a dinosaur amusement area, rubberized running paths, a mini-amphitheater, and lively local food stalls.</p>
+          <a href="bayungporac.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Sand Box">
+        <div class="dest-img">
+          <img src="sandboxbg.png" alt="Sand Box">
+        </div>
+        <div class="dest-body">
+          <h3>Sand Box</h3>
+          <p>An ultimate outdoor playground offering a wide range of thrilling activities, high ropes courses, and ATV rides for families.</p>
+          <a href="sandbox.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Porac Baywalk Park">
+        <div class="dest-img">
+          <img src="baywalkbg.png" alt="Porac Baywalk Park">
+        </div>
+        <div class="dest-body">
+          <h3>Porac Baywalk Park</h3>
+          <p>A vibrant community hub and leisure destination featuring local food spots, open spaces, and lively night markets.</p>
+          <a href="baywalk.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- RESORT category -->
+  <div id="resort" class="category-section">
+    <h3 class="category-heading">Resort</h3>
+    <div class="card-grid">
+      <article class="dest-card" data-name="Hacienda Antonio of Señura">
+        <div class="dest-img">
+          <img src="haciendabg.jpg" alt="Hacienda Antonio of Señura">
+        </div>
+        <div class="dest-body">
+          <h3>Hacienda Antonio of Señura</h3>
+          <p>A natural and relaxing escape featuring spacious lodges, refreshing pools, and open gazebos perfect for recreation.</p>
+          <a href="hacienda.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Moontura Heights Resort">
+        <div class="dest-img">
+          <img src="moonturabg.jpg" alt="Moontura Heights Resort">
+        </div>
+        <div class="dest-body">
+          <h3>Moontura Heights Resort</h3>
+          <p>A rising private villa destination in Porac featuring scenic views, relaxing pool amenities, and lush landscapes perfect for family outings.</p>
+          <a href="moontura.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Poracay Resort">
+        <div class="dest-img">
+          <img src="poracaybg.jpg" alt="Poracay Resort">
+        </div>
+        <div class="dest-body">
+          <h3>Poracay Resort</h3>
+          <p>A vibrant vacationer's haven offering multi-sized swimming pools, native nipa huts, and an active outdoor playground perfect for big group outings and family gatherings.</p>
+          <a href="poracay.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- CHURCH category -->
+  <div id="church" class="category-section">
+    <h3 class="category-heading">Church</h3>
+    <div class="card-grid">
+      <article class="dest-card" data-name="Pio Chapel">
+        <div class="dest-img">
+          <img src="piochapelbg.jpg" alt="Pio Chapel">
+        </div>
+        <div class="dest-body">
+          <h3>Pio Chapel</h3>
+          <p>A majestic community chapel dedicated to Saint Vincent Ferrer, standing as a testament to Porac's enduring spiritual heritage and architectural resilience.</p>
+          <a href="piochapel.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Pio Chapel">
+        <div class="dest-img">
+          <img src="sannicolasbg.png" alt="Pio Chapel">
+        </div>
+        <div class="dest-body">
+          <h3>San Nicolas De Tolentino Chapel</h3>
+          <p>A peaceful neighborhood chapel in Pulong Santol that serves as the heart of local religious celebrations and seasonal barangay fiestas.</p>
+          <a href="sannicolaschapel.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+
+      <article class="dest-card" data-name="Pio Chapel">
+        <div class="dest-img">
+          <img src="catalinabg.png" alt="Pio Chapel">
+        </div>
+        <div class="dest-body">
+          <h3>Santa Catalina de Alejandria Parish Church</h3>
+          <p>A historic 19th-century Baroque landmark in Poblacion, standing as a proud symbol of Porac's enduring spiritual heritage and architectural resilience through the centuries.</p>
+          <a href="santacatalina.html" class="btn-outline">View More</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+  <!-- ============================= -->
+  <!-- ABOUT PORAC                   -->
+  <!-- ============================= -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-img-wrap">
+        <img src="poracaboutus.jpg" alt="Scenic view of Porac Pampanga">
+      </div>
+      <div class="about-text">
+        <span class="eyebrow">About Porac</span>
+        <h2 class="section-heading">A Town Shaped by Nature's Resilience</h2>
+        <p>Nestled at the foot of Mount Pinatubo, Porac is a municipality in Pampanga where volcanic history has carved some of the Philippines' most breathtaking landscapes. What was once a site of devastation has transformed into a thriving destination for nature lovers and adventurers alike.</p>
+        <p>From ash-covered canyons to cool mountain hot springs, Porac invites travelers to experience a rare blend of natural wonder, rich Kapampangan culture, and warm Aeta hospitality found nowhere else.</p>
+        <ul class="about-list">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            Home to the majestic Mount Pinatubo crater lake
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            Natural volcanic hot springs and river trails
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+            Rich Aeta and Kapampangan cultural heritage
+          </li>
+        </ul>
+        <a href="#destinations" class="btn-primary" style="background:var(--forest); color:var(--white);">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- WHY VISIT PORAC               -->
+  <!-- ============================= -->
+  <section class="why-visit" id="why-visit">
+    <div class="section-head-row">
+      <span class="eyebrow">Why Visit Porac</span>
+      <h2 class="section-heading">Three Reasons to Pack Your Bags</h2>
+      <p class="section-sub">A destination where every trail, hot spring, and local story tells you why Porac deserves a place on your travel list.</p>
+    </div>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2C7 2 3 6 3 11c0 4.5 3.5 8 8 8h1c4.5 0 8-3.5 8-8 0-5-4-9-9-9z"/>
+            <path d="M12 22V13"/>
+          </svg>
+        </div>
+        <h3>Beautiful Nature</h3>
+        <p>Volcanic craters, lahar canyons, and lush forest trails create a landscape unlike anywhere else in Luzon.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21h18"/>
+            <path d="M5 21V9l7-5 7 5v12"/>
+            <path d="M9 21v-6h6v6"/>
+          </svg>
+        </div>
+        <h3>Rich Culture</h3>
+        <p>Immerse yourself in Aeta traditions and Kapampangan heritage passed down through generations.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="3 11 22 2 13 21 11 13 3 11"/>
+          </svg>
+        </div>
+        <h3>Adventure Activities</h3>
+        <p>4x4 lahar rides, crater treks, and river trekking make Porac a playground for thrill-seekers.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- FOOTER                        -->
+  <!-- ============================= -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="footer-logo">
+        <img src="logoporacnobgfooter.png" alt="Tuklas Porac logo" class="logo-img footer-logo-img">
+      </div>
+      <p>Your gateway to the natural wonders, culture, and adventure of Porac, Pampanga.</p>
+    </div>
+
+    <div class="footer-links-col">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#destinations">Destination</a></li>
+        <li><a href="index.html#about">Description</a></li>
+        <li><a href="index.html#why-visit">About</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-disclaimer-col">
+      <h4>Disclaimer</h4>
+      <p class="disclaimer">
+        Trails, hot springs, and outdoor activities featured on this site carry inherent risks. All information provided is for educational and informational purposes only. Visit at your own risk and discretion. Tuklas Porac and its administrators are not liable for any injury, loss, or damage incurred during your visit. Please follow local guides, safety signage, and barangay/tourism office advisories at all times.
+      </p>
+    </div>
+  </div>
+
+  <div class="footer-acknowledgment">
+    <p>The TUKLAS PORAC team would like to express its sincere gratitude to the Porac Tourism Office for granting permission to use photographs and tourism-related information featured on this website. Their cooperation and support made the development of this project possible. We also extend our appreciation to everyone who provided guidance, encouragement, and support throughout the development of this website.</p>
+    <p>All photographs, information, and other materials are used with permission and are intended solely to promote tourism, increase awareness, and provide helpful information to visitors exploring the Municipality of Porac.</p>
+  </div>
+
+  <div class="footer-bottom">
+    &copy; 2026 Tuklas Porac. All Rights Reserved.
+  </div>
+</footer>
+
+  <script src="searchlist.js">
+  </script>
+
+</body>
+</html>
